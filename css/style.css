@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+header{
+    background-image: linear-gradient(#03045E, #0077B6, #90E0EF);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* width: 100%; */
+   
+}
+.aboutme{
+    padding:3rem .5rem;
+    text-align: center;   
+
+}
+.description{
+    color: beige;
+}
+.mywork{
+    background: #03045E;
+    color: beige;
+    margin: 1rem 0;
+}
+h1{
+    font-size: 4em;
+    
+}
+h2{
+    font-size: 2em;
+}
+p{
+    padding: .5rem;
+}
+a{
+    text-decoration: none;
+}
+a img:hover{
+    transform: scale(1.2);
+}
+.portrait{
+    width: 80%;
+    border-radius: 10%;
+    
+}
+main, footer{
+    text-align: center;
+}
+main div:nth-child(2n), main div:nth-child(2n) a{
+    background-color: #0077B6;
+    color: #f5f5dc;
+    text-decoration: none;
+}
+main div:nth-child(2n) a:hover, a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    padding: 1rem;
+    background-image: linear-gradient(#03045E, #0077B6);
+    color: beige;
+}
+footer div img, .description a img{
+    width: 15%;
+    max-width: 80px;
+}
+
+div img{
+    width: 300px;
+    filter: drop-shadow(0 0 .5rem #90e0ef);
+    /* border: 1px solid #ccc; */
+
+}
+@media screen and (min-width: 600px){
+    header{
+        /* height: 100vh;     */
+        border-radius: 15px 30% 15px; 
+        margin: .5rem;   
+    }
+    .aboutme{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 10% 1rem;
+        align-items: center;
+       
+       
+    }
+    .portrait{
+        max-width: 400px;
+        border-radius: 10%;
+        width: 100%;
+        border: 1px solid beige;
+        
+    }
+}
