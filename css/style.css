@@ -24,7 +24,8 @@ header{
 .mywork{
     background: #03045E;
     color: beige;
-    margin: 1rem 0;
+    margin: 3rem 0 0 0;
+    padding: 2rem;
 }
 h1{
     font-size: 4em;
@@ -33,8 +34,8 @@ h1{
 h2{
     font-size: 2em;
 }
-p{
-    padding: .5rem;
+p, div{
+    padding: .7rem;
 }
 a{
     text-decoration: none;
@@ -50,17 +51,18 @@ a img:hover{
 main, footer{
     text-align: center;
 }
-main div:nth-child(2n), main div:nth-child(2n) a{
+main section:nth-child(2n), main section:nth-child(2n) a{
     background-color: #0077B6;
     color: #f5f5dc;
     text-decoration: none;
 }
-main div:nth-child(2n) a:hover, a:hover{
+main section:nth-child(2n) a:hover, a:hover{
     text-decoration: underline;
 }
 
 footer{
     padding: 1rem;
+    margin-top: 4rem;
     background-image: linear-gradient(#03045E, #0077B6);
     color: beige;
 }
@@ -70,7 +72,7 @@ footer div img, .description a img{
 }
 
 div img{
-    width: 300px;
+    width: 350px;
     filter: drop-shadow(0 0 .5rem #90e0ef);
     /* border: 1px solid #ccc; */
 
@@ -81,11 +83,43 @@ div img{
         border-radius: 15px 30% 15px; 
         margin: .5rem;   
     }
+    section div{
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        gap: 2rem;
+        margin: 0 4rem;
+    }
+    section div img{
+        width: 100%;
+        
+     
+    }
+    .one, .three, .four{
+        grid-column: 1/2;
+        gap: 0;
+        width: 60%;
+        justify-self: center;
+        
+    }
+    .one{
+        grid-row: 1/2;
+    }
+    .two{
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    .three{
+        grid-row: 2/3;
+    }
+    .four{
+        grid-row: 3/4;
+    }
+    
     .aboutme{
         display: flex;
         flex-direction: row;
         gap: 1rem;
-        padding: 10% 1rem;
+        padding: 8% 1rem;
         align-items: center;
        
        
@@ -97,4 +131,5 @@ div img{
         border: 1px solid beige;
         
     }
+   
 }
