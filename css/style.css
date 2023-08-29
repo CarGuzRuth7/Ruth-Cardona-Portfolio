@@ -72,7 +72,7 @@ footer div img, .description a img{
 }
 
 div img{
-    width: 350px;
+    width: 95%;
     filter: drop-shadow(0 0 .5rem #90e0ef);
     /* border: 1px solid #ccc; */
 
